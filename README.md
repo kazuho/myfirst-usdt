@@ -12,6 +12,6 @@ Builds an executable named `test` on Linux and macOS. Only tested on Linux.
 
 1. Start the program (`./test &`).
 2. While the program is running, attach the tracer, and see what happens.
-  * on Linux, `sudo trace-bpfcc -T -p `pidof test` u:./test:done` waits for and logs the `done` probe.
+  * on Linux, `sudo trace-bpfcc -T -p $(pidof test) u:./test:done` waits for and logs the `done` probe.
     * specify the hello probe, and see what happens
   * on macOS, you should be able to use the dtrace(1) for tracing the probes.
