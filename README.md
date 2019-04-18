@@ -4,7 +4,7 @@
 
 Run make (or `gmake` on FreeBSD, macOS).
 
-Builds an executable named `test` on Linux and macOS. Only tested on Linux.
+Builds an executable named `test` on Linux, FreeBSD, macOS. Only tested on Linux and FreeBSD.
 
 `test` defines two probes; `hello` and `done`.  `hello` is called many many times. `done` is called only once when the program exits.
 
