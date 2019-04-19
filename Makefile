@@ -17,6 +17,8 @@ endif
 .c.o:
 	$(CC) -c $(COPTS) $<
 
+all: test
+
 test: probe.h $(OBJS) $(DTOBJS)
 	$(CC) -o $@ $(OBJS) $(DTOBJS) $(LIBS)
 
